@@ -1,4 +1,4 @@
-import './scss/styles.scss';
+import './css/style.css';
 
 const container = document.querySelector('.joke-container');
 
