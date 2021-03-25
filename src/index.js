@@ -1,13 +1,12 @@
 import './css/style.css';
 import Navbar from './components/nav';
+import Home from './components/home';
 
-class Container {
-  constructor(container) {
-    this.container = container;
-  }
-}
 
 const cont = document.querySelector('#content');
-console.log(cont);
-const nav = new Navbar(cont);
+const main = document.createElement('div');
+const nav = new Navbar(cont, main);
 nav.renderNav();
+
+const homePage = new Home(main);
+homePage.renderHome();
