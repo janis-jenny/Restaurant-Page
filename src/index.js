@@ -1,17 +1,13 @@
 import './css/style.css';
+import Navbar from './components/nav';
 
-const container = document.querySelector('.joke-container');
+class Container {
+  constructor(container) {
+    this.container = container;
+  }
+}
 
-const requestJoke = async () => {
-  const url = 'https://api.chucknorris.io/jokes/random';
-  const response = await fetch(url);
-  const json = await response.json();
-  return json;
-};
-
-const displayJoke = async () => {
-  const joke = await requestJoke();
-  container.innerText = joke.value;
-};
-
-displayJoke();
+const cont = document.querySelector('#content');
+console.log(cont);
+const nav = new Navbar(cont);
+nav.renderNav();

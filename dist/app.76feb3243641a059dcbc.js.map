@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://webpacktemplate/./src/index.js"],"names":["console","log"],"mappings":"mBAGAA,QAAQC,IAAI,gB","file":"app.76feb3243641a059dcbc.js","sourcesContent":["import './css/style.css';\n\n// eslint-disable-next-line no-console\nconsole.log('HELLO WORLD');"],"sourceRoot":""}
