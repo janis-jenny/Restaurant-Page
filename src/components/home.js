@@ -10,28 +10,36 @@ export default class Home {
   backgroundImg() {
     const image = document.createElement('div');
     image.classList.add('back-img');
+    const element = document.createElement('h1');
+    element.innerText = 'MAIDO';
+    element.classList.add('title');
+    const description = document.createElement('p');
+    description.innerText = 'THE BEST RESTAURANT IN PERU';
+    description.classList.add('paragraph');
+    image.appendChild(element);
+    image.appendChild(description);
     this.header.appendChild(image);
   }
 
-  title() {
+ /*  title() {
     const element = document.createElement('h1');
     element.innerText = 'MAIDO';
     element.classList.add('title');
     this.header.appendChild(element);
-  }
+  } */
 
-  description() {
+  /* description() {
     const description = document.createElement('p');
     description.innerText = 'THE BEST RESTAURANT IN PERU';
     description.classList.add('paragraph');
     this.header.appendChild(description);
-  }
+  } */
 
   renderHome() {
     this.header.innerText = '';
     this.backgroundImg();
-    this.title();
-    this.description();
+    // this.title();
+    // this.description();
     // console.log(this.container);
     this.container.append(this.header);
   }
