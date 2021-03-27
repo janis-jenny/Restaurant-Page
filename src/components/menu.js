@@ -1,6 +1,7 @@
-/* import poda from '../images/Poda-ceviche.jpg';
+import { imageArray } from './images';
+import poda from '../images/Poda-ceviche.jpg';
 import nikkei from '../images/nikkei.jpg';
-import snacks from '../images/Snacks.jpg'; */
+import snacks from '../images/Snacks.jpg';
 /* import estofado from '../images/Estofado-Nikkei.jpg';
 import nigiris from '../images/Nigiris.jpg';
 import dimsum from '../images/Dim-Sum.jpg'; */
@@ -9,22 +10,40 @@ export default class Menu {
   constructor(container) {
     this.section = document.createElement('section');
     this.container = container;
-    // this.cardsContainer = newElment('section', undefined, ['cards-container']);
-    // this.images = [poda, nikkei, snacks];
+    this.images = [poda, nikkei, snacks];
   }
 
   title() {
     const title = document.createElement('h1');
-    title.innerText = 'NIKKEI';
+    title.innerText = 'AMAZON NIKKEI EXPERIENCE...';
     this.section.append(title);
   }
 
+  dishes(subtitle, imgs) {
+    const cards = document.createElement('div');
+    cards.classList.add('card');
+    const imgcontainer = document.createElement('div');
+    imgcontainer.classList.add('card-img');
+    const cardSubtitle = document.createElement('h3');
+    cardSubtitle.innerText = `${subtitle}`;
+    cardSubtitle.classList.add('card-title');
+
+    imageArray(imgcontainer, imgs);
+
+    cards.append(cardSubtitle);
+    cards.append(imgcontainer);
+
+    this.section.append(cards);
+  }
+
   renderMenu() {
-    this.section.innerText = '';
     this.title();
     this.container.append(this.section);
+    this.dishes('Main', this.images);
   }
- /*  cardContainer() {
+
+
+  /*  cardContainer() {
     const card = document.createElement('div');
     card.classList.add('div-img');
     const img = document.createElement('img');
