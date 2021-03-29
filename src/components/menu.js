@@ -1,16 +1,17 @@
 import imageArray from './images';
-import poda from '../images/Poda-ceviche.jpg';
-import nikkei from '../images/nikkei.jpg';
-import snacks from '../images/Snacks.jpg';
+import poda from '../images/Poda.jpg';
+import estofado from '../images/Estofado.jpg';
+import ceviche from '../images/ceviche-nikkei.jpg';
 /* import estofado from '../images/Estofado-Nikkei.jpg';
 import nigiris from '../images/Nigiris.jpg';
 import dimsum from '../images/Dim-Sum.jpg'; */
+import '../css/style.css';
 
 export default class Menu {
   constructor(container) {
     this.section = document.createElement('section');
     this.container = container;
-    this.images = [poda, nikkei, snacks];
+    this.images = [poda, estofado, ceviche];
   }
 
   title() {

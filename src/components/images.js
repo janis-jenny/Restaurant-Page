@@ -7,4 +7,13 @@ const imageArray = (container, imgArray) => {
   return container;
 };
 
+/* const imageTitle = (container, imgArray) => {
+  idxImg = 0;
+  imgArray.forEach(img => {
+    const imgTitle = document.createElement('h4');
+
+    container.appendChild(imgTag);
+  });
+  return container;
+ */
 export default imageArray;
