@@ -1,4 +1,4 @@
-import { imageArray } from './images';
+import imageArray from './images';
 import poda from '../images/Poda-ceviche.jpg';
 import nikkei from '../images/nikkei.jpg';
 import snacks from '../images/Snacks.jpg';
