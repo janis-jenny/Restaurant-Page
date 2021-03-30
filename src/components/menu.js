@@ -1,17 +1,22 @@
 import imageArray from './images';
+import snacks1 from '../images/snacks1.jpg';
+import snacks2 from '../images/snacks2.jpg';
+import snacks3 from '../images/shari.jpg';
 import poda from '../images/Poda.jpg';
 import estofado from '../images/Estofado.jpg';
 import ceviche from '../images/ceviche-nikkei.jpg';
-/* import estofado from '../images/Estofado-Nikkei.jpg';
-import nigiris from '../images/Nigiris.jpg';
-import dimsum from '../images/Dim-Sum.jpg'; */
+import dessert1 from '../images/dessert1.jpg';
+import dessert2 from '../images/dessert2.jpg';
+import dessert3 from '../images/dessert3.jpg';
 import '../css/style.css';
 
 export default class Menu {
   constructor(container) {
     this.section = document.createElement('section');
     this.container = container;
-    this.images = [poda, estofado, ceviche];
+    this.snacks = [snacks1, snacks2, snacks3];
+    this.maindish = [poda, estofado, ceviche];
+    this.desserts = [dessert1, dessert2, dessert3];
   }
 
   title() {
@@ -40,7 +45,9 @@ export default class Menu {
   renderMenu() {
     this.title();
     this.container.append(this.section);
-    this.dishes('Main', this.images);
+    this.dishes('Snacks', this.snacks);
+    this.dishes('Main', this.maindish);
+    this.dishes('Desserts', this.desserts);
   }
 
 
