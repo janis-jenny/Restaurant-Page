@@ -21,6 +21,7 @@ export default class Menu {
 
   title() {
     const title = document.createElement('h1');
+    title.classList.add('title-menu')
     title.innerText = 'AMAZON NIKKEI EXPERIENCE...';
     this.section.append(title);
   }
@@ -49,17 +50,4 @@ export default class Menu {
     this.dishes('Main', this.maindish);
     this.dishes('Desserts', this.desserts);
   }
-
-
-  /*  cardContainer() {
-    const card = document.createElement('div');
-    card.classList.add('div-img');
-    const img = document.createElement('img');
-    img.src = poda;
-    img.classList.add('menu-item');
-    const name = document.createElement('h3');
-    name.innerText = 'Poda Ceviche';
-    const cost = document.createElement('h2');
-    cost.innerText = price;
-  } */
 }

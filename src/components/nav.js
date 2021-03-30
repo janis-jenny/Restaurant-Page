@@ -1,6 +1,6 @@
 import Home from './home';
 import Menu from './menu';
-// import Contact from './components/contact';  */
+import Contact from './contact';
 
 export default class Navbar {
   constructor(container, main) {

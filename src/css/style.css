@@ -23,6 +23,12 @@
   justify-content: center;
 }
 
+.card-title, .title-menu {
+  display: flex;
+  justify-content: center;
+  margin: 25px auto;
+}
+
 .card-img img {
   margin: 25px;
   width: 240px;
