@@ -29,6 +29,13 @@
   margin: 25px auto;
 }
 
+.icons {
+  display: flex;
+  align-items: flex-start;
+  color: black;
+  margin: 10px;
+}
+
 .card-img img {
   margin: 25px;
   width: 240px;

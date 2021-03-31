@@ -1,6 +1,7 @@
 import './css/style.css';
 import Navbar from './components/nav';
 import Home from './components/home';
+import Footer from './components/footer';
 
 
 const cont = document.querySelector('#content');
@@ -10,3 +11,6 @@ nav.renderNav();
 
 const homePage = new Home(main);
 homePage.renderHome();
+
+const footer = new Footer(cont);
+footer.renderFooter();
