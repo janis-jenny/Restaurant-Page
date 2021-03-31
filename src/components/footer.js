@@ -1,24 +1,29 @@
+import imageArray from './images';
+import face from '../images/facebook.png';
+import insta from '../images/instagram.png';
 import '../css/style.css';
 
 export default class Footer {
   constructor(container) {
     this.section = document.createElement('footer');
     this.container = container;
+    this.icons = [face, insta];
   }
 
-  footer() {
-    const socialMedia = document.createElement('ul');
+  footer(subtitle, imgs) {
+    const socialMedia = document.createElement('div');
     socialMedia.classList.add('icons');
-    const facebook = document.createElement('li');
-    facebook.classList.add('face-icon');
-    facebook.innerHTML = '<i class=\'fab fa-facebook\'></i>';
-    const instagram = document.createElement('li');
-    instagram.classList.add('insta-icon');
-    instagram.innerHTML = '<i class\'fab fa-instagram-square\'></i>';
-    socialMedia.appendChild(facebook);
-    socialMedia.appendChild(instagram);
+    const iconContainer = document.createElement('div');
+    iconContainer.classList.add('icons-card');
+    const iconSubtitle = document.createElement('h3');
+    iconSubtitle.innerText = `${subtitle}`;
+    iconSubtitle.classList.add('icons-title');
+
+    imageArray(iconContainer, imgs)
+
+    socialMedia.appendChild(iconContainer);
+    socialMedia.appendChild(iconSubtitle);
     this.section.appendChild(socialMedia);
-    this.container.appendChild(this.section);
   }
 
   /* selectLinks() {
@@ -61,6 +66,8 @@ export default class Footer {
 
   renderFooter() {
     // this.listenLinks();
-    this.footer();
+ 
+    this.container.append(this.section);
+    this.footer('Social Media', this.icons);
   }
 }

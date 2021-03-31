@@ -1,4 +1,4 @@
-import '../images/MaidoInside.jpg';
+import '../images/Maido.jpg';
 import '../css/style.css';
 
 export default class Home {
