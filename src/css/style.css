@@ -29,15 +29,27 @@
   margin: 25px auto;
 }
 
-.icons {
-  display: flex;
-  align-items: flex-start;
-  color: black;
-  margin: 10px;
-}
 
 .card-img img {
   margin: 25px;
   width: 240px;
   height: 200px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons-card img {
+  margin: 7px;
+  width: 35px;
+  height: 35px;
+  filter: invert(50%);
+}
+
+.logo img {
+  margin: 5px;
+  width: 65px;
+  height: 65px;
 }

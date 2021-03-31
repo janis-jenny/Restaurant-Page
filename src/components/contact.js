@@ -18,13 +18,13 @@ export default class Contact {
     info.classList.add('info');
     const address = document.createElement('p');
     address.classList.add('address');
-    address.innerText = 'Av. Pedro de Osma 301, Barranco, Lima, Perú.'
+    address.innerText = 'San Martín 399, Miraflores, Lima, Perú.'
     const phone = document.createElement('p');
     phone.classList.add('address');
     phone.innerText = '+51 1 242-8515';
     const email = document.createElement('p');
     email.classList.add('email');
-    email.innerText = 'reservas@centralrestaurante.com.pe';
+    email.innerText = 'reservas@maido.pe';
 
     info.append(address);
     info.append(phone);
@@ -35,7 +35,7 @@ export default class Contact {
 
   reservations() {
     const reserv = document.createElement('div');
-    reserv.classList.add('reservtions');
+    reserv.classList.add('reservations');
     const titlereserv = document.createElement('h3');
     titlereserv.classList.add('title-reserv');
     titlereserv.innerText = 'RESERVATIONS:';
@@ -44,7 +44,7 @@ export default class Contact {
     days.innerText = 'Monday to Saturday';
     const hours = document.createElement('p');
     hours.classList.add('days');
-    hours.innerText = 'From 12:00 to 18:30';
+    hours.innerText = 'From 12:00 to 19:30';
 
     reserv.append(titlereserv);
     reserv.append(days);

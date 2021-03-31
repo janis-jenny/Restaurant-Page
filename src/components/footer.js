@@ -1,6 +1,7 @@
 import imageArray from './images';
 import face from '../images/facebook.png';
 import insta from '../images/instagram.png';
+import maido from '../images/logo-maido.png';
 import '../css/style.css';
 
 export default class Footer {
@@ -8,66 +9,41 @@ export default class Footer {
     this.section = document.createElement('footer');
     this.container = container;
     this.icons = [face, insta];
+    this.logo = [maido];
   }
 
-  footer(subtitle, imgs) {
+  footerMedia(subtitle, imgs) {
     const socialMedia = document.createElement('div');
     socialMedia.classList.add('icons');
-    const iconContainer = document.createElement('div');
-    iconContainer.classList.add('icons-card');
     const iconSubtitle = document.createElement('h3');
     iconSubtitle.innerText = `${subtitle}`;
     iconSubtitle.classList.add('icons-title');
+    const iconContainer = document.createElement('div');
+    iconContainer.classList.add('icons-card');
 
-    imageArray(iconContainer, imgs)
-
-    socialMedia.appendChild(iconContainer);
+    imageArray(iconContainer, imgs);
+    
     socialMedia.appendChild(iconSubtitle);
+    socialMedia.appendChild(iconContainer);
     this.section.appendChild(socialMedia);
   }
 
-  /* selectLinks() {
-    this.nav();
-    const links = document.querySelectorAll('.navi');
-    this.listenLinks(links);
-    // console.log(links)
-  }
+  footerLogo(subtitle, imgs) {
+    const logo = document.createElement('div');
+    logo.classList.add('logo-card');
+    const logoContainer = document.createElement('div');
+    logoContainer.classList.add('logo');
 
-  listenLinks(tabs) {
-    tabs.forEach((tab, idx) => {
-      tab.addEventListener('click', () => {
-        this.idxTab = idx;
-        this.displayContent(this.idxTab);
-      });
-    });
-  }
+    imageArray(logoContainer, imgs);
 
-  displayContent(idxLink) {
-    this.main.innerText = '';
-    switch (idxLink) {
-      case 0: {
-        // console.log(this.main)
-        const home = new Home(this.main);
-        home.renderHome();
-        break;
-      }
-      case 1: {
-        const menu = new Menu(this.main);
-        menu.renderMenu();
-        break;
-      }
-      default: {
-        const cont = new Contact(this.main);
-        cont.renderContact();
-        break;
-      }
-    }
-  } */
+    logo.appendChild(logoContainer);
+
+    this.section.appendChild(logo);
+  }
 
   renderFooter() {
-    // this.listenLinks();
- 
     this.container.append(this.section);
-    this.footer('Social Media', this.icons);
+    this.footerMedia('Social Media', this.icons);
+    this.footerLogo('', this.logo);
   }
 }
