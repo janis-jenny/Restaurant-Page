@@ -1,6 +1,8 @@
+import imageArray from './images';
 import Home from './home';
 import Menu from './menu';
 import Contact from './contact';
+import maido from '../images/logo-maido.png';
 
 export default class Navbar {
   constructor(container, main) {
@@ -8,10 +10,22 @@ export default class Navbar {
     this.idxTab = 0;
     this.container = container;
     this.main = main;
+    this.logo = [maido];
+  }
+
+  navLogo(subtitle, imgs) {
+    const logoContainer = document.createElement('div');
+    logoContainer.classList.add('logo');
+
+    imageArray(logoContainer, imgs);
+
+    this.navbar.appendChild(logoContainer);
+    this.container.appendChild(this.navbar);
   }
 
   nav() {
     const navLink = document.createElement('ul');
+    navLink.classList.add('links-list');
     const homeLink = document.createElement('li');
     homeLink.innerText = 'Home';
     homeLink.classList.add('navi');
@@ -32,7 +46,6 @@ export default class Navbar {
     this.nav();
     const links = document.querySelectorAll('.navi');
     this.listenLinks(links);
-    // console.log(links)
   }
 
   listenLinks(tabs) {
@@ -67,7 +80,7 @@ export default class Navbar {
   }
 
   renderNav() {
-    // this.listenLinks();
+    this.navLogo('', this.logo);
     this.selectLinks();
     this.container.append(this.main);
   }

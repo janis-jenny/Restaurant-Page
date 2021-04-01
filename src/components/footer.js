@@ -29,16 +29,12 @@ export default class Footer {
   }
 
   footerLogo(subtitle, imgs) {
-    const logo = document.createElement('div');
-    logo.classList.add('logo-card');
     const logoContainer = document.createElement('div');
-    logoContainer.classList.add('logo');
+    logoContainer.classList.add('logo-footer');
 
     imageArray(logoContainer, imgs);
 
-    logo.appendChild(logoContainer);
-
-    this.section.appendChild(logo);
+    this.section.appendChild(logoContainer);
   }
 
   renderFooter() {
