@@ -20,16 +20,16 @@ export default class Contact {
     address.classList.add('address');
     address.innerText = 'San Martín 399, Miraflores, Lima, Perú.'
     const phone = document.createElement('p');
-    phone.classList.add('address');
+    phone.classList.add('phone');
     phone.innerText = '+51 1 242-8515';
     const email = document.createElement('p');
-    email.classList.add('email');
+    email.classList.add('address');
     email.innerText = 'reservas@maido.pe';
 
     info.append(address);
-    info.append(phone);
     info.append(email);
-
+    info.append(phone);
+    
     this.section.append(info);
   }
 
