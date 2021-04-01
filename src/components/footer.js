@@ -22,7 +22,7 @@ export default class Footer {
     iconContainer.classList.add('icons-card');
 
     imageArray(iconContainer, imgs);
-    
+
     socialMedia.appendChild(iconSubtitle);
     socialMedia.appendChild(iconContainer);
     this.section.appendChild(socialMedia);

@@ -21,7 +21,7 @@ export default class Menu {
 
   title() {
     const title = document.createElement('h1');
-    title.classList.add('title-menu')
+    title.classList.add('title-menu');
     title.innerText = 'AMAZON NIKKEI EXPERIENCE...';
     this.section.append(title);
   }

@@ -8,7 +8,7 @@ export default class Contact {
 
   title() {
     const title = document.createElement('h1');
-    title.classList.add('title-contact')
+    title.classList.add('title-contact');
     title.innerText = 'CONTACT';
     this.section.append(title);
   }
@@ -18,7 +18,7 @@ export default class Contact {
     info.classList.add('info');
     const address = document.createElement('p');
     address.classList.add('address');
-    address.innerText = 'San Martín 399, Miraflores, Lima, Perú.'
+    address.innerText = 'San Martín 399, Miraflores, Lima, Perú.';
     const phone = document.createElement('p');
     phone.classList.add('phone');
     phone.innerText = '+51 1 242-8515';
@@ -29,7 +29,7 @@ export default class Contact {
     info.append(address);
     info.append(email);
     info.append(phone);
-    
+
     this.section.append(info);
   }
 
@@ -58,7 +58,7 @@ export default class Contact {
     this.info();
     this.reservations();
     this.container.append(this.section);
-   /*  this.dishes('Snacks', this.snacks);
+    /*  this.dishes('Snacks', this.snacks);
     this.dishes('Main', this.maindish);
     this.dishes('Desserts', this.desserts); */
   }
