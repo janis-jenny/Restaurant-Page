@@ -37,7 +37,7 @@ This a single restaurant page with all page information dynamically generated an
 
 ## 🔴 Live Demo:
 
-[Live Demo Link](/)
+[Live Demo Link](https://janis-jenny.github.io/Restaurant-Page/)
 
 
 
