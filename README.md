@@ -28,7 +28,7 @@
 
 ## 👩🏼‍💻 About Maido
 
-![screenshot](./screenshoot.png)
+![screenshot](./src/images/screenshoot.png)
 
 This a single restaurant page with all page information dynamically generated and tab-switching achieved using pure Javascript .
 
