@@ -38,6 +38,11 @@ nav {
   border-radius: 5px;
 }
 
+.active {
+  background-color: rgb(92, 91, 91);
+  color: whitesmoke;
+}
+
 .back-img {
   background-image: url("../images/Maido.jpg");
   background-size: 100% 100%;

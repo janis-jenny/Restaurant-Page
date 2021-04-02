@@ -46,12 +46,25 @@ export default class Navbar {
     this.nav();
     const links = document.querySelectorAll('.navi');
     this.listenLinks(links);
+    this.SetActiveClass(links, this.idxTab);
+  }
+
+  SetActiveClass(linksGroup) {
+    linksGroup[this.idxTab].classList.add('active');
+  }
+
+  static RemoveActiveClass(tabs) {
+    tabs.forEach(tab => {
+      tab.classList.remove('active');
+    });
   }
 
   listenLinks(tabs) {
     tabs.forEach((tab, idx) => {
       tab.addEventListener('click', () => {
+        Navbar.RemoveActiveClass(tabs);
         this.idxTab = idx;
+        this.SetActiveClass(tabs);
         this.displayContent(this.idxTab);
       });
     });
