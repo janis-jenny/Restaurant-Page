@@ -85,7 +85,7 @@ h1 {
   justify-content: center;
 }
 
-.card-title, 
+.card-title,
 .title-menu {
   display: flex;
   justify-content: center;
@@ -113,7 +113,7 @@ h1 {
   padding-top: 5rem;
 }
 
-.info, 
+.info,
 .reservations {
   display: flex;
   flex-direction: column;
@@ -121,7 +121,8 @@ h1 {
   align-items: center;
 }
 
-.address, .phone {
+.address,
+.phone {
   margin: 0.3rem;
   padding: 0.5rem 0.3rem 0.3rem 0.3rem;
   border-top: tomato 1.6px solid;
