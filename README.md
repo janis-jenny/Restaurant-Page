@@ -60,8 +60,9 @@ To get a local copy up and running follow these simple steps:
 3. Clone it using git command `git clone <you_repository_link>`.
 4. Move to the local project: cd `<Your_repository_name>`.
 5. Run `npm install` to get all the dependencies.
-6. Run `npm run build` for one time build of bundle after changes.
+6. If you want to run the development mode run: `npm run dev`.
 7. Run `npm run watch` to run webpack build in watch mode.
+
 
 
 ## 👥 Author
