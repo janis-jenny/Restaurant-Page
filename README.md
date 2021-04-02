@@ -45,11 +45,10 @@ This a single restaurant page with all page information dynamically generated an
 
 - HTML5
 - CSS3
-- SCSS
 - JavaScript
 - Webpack
 - Linters
-- VS code
+- VS Code
 
 
 ## 🤖 How it works
@@ -58,7 +57,11 @@ To get a local copy up and running follow these simple steps:
 
 1. Go to the [repository page](https://github.com/janis-jenny/Restaurant-Page/).
 2. Press the "Code" button and copy the link.
-3. Clone it using git command `git clone <link>`.
+3. Clone it using git command `git clone <you_repository_link>`.
+4. Move to the local project: cd `<Your_repository_name>`.
+5. Run `npm install` to get all the dependencies.
+6. Run `npm run build` for one time build of bundle after changes.
+7. Run `npm run watch` to run webpack build in watch mode.
 
 
 ## 👥 Author

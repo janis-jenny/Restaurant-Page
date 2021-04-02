@@ -61,7 +61,6 @@ export default class Navbar {
     this.main.innerText = '';
     switch (idxLink) {
       case 0: {
-        // console.log(this.main)
         const home = new Home(this.main);
         home.renderHome();
         break;

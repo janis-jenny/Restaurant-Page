@@ -58,8 +58,5 @@ export default class Contact {
     this.info();
     this.reservations();
     this.container.append(this.section);
-    /*  this.dishes('Snacks', this.snacks);
-    this.dishes('Main', this.maindish);
-    this.dishes('Desserts', this.desserts); */
   }
 }
