@@ -10,7 +10,7 @@
 <p align="center">
   <strong>Made by Jenny Cárdenas</strong>
   <br>
-   This is a retaurant page made all with jJavascript and allows you to navigate between tabs.
+   This is a retaurant page made all with Javascript and allows you to navigate between tabs.
 
 </p>
 

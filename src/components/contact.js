@@ -15,7 +15,7 @@ export default class Contact {
 
   info() {
     const info = document.createElement('div');
-    info.classList.add('info');
+    info.classList.add('info', 'flex');
     const address = document.createElement('p');
     address.classList.add('address');
     address.innerText = 'San Martín 399, Miraflores, Lima, Perú.';
@@ -26,16 +26,14 @@ export default class Contact {
     email.classList.add('address');
     email.innerText = 'reservas@maido.pe';
 
-    info.append(address);
-    info.append(email);
-    info.append(phone);
+    info.append(address, email, phone);
 
     this.section.append(info);
   }
 
   reservations() {
     const reserv = document.createElement('div');
-    reserv.classList.add('reservations');
+    reserv.classList.add('reservations', 'flex');
     const titlereserv = document.createElement('h3');
     titlereserv.classList.add('title-reserv');
     titlereserv.innerText = 'RESERVATIONS:';
@@ -46,9 +44,7 @@ export default class Contact {
     hours.classList.add('days');
     hours.innerText = 'From 12:00 to 19:30';
 
-    reserv.append(titlereserv);
-    reserv.append(days);
-    reserv.append(hours);
+    reserv.append(titlereserv, days, hours);
 
     this.section.append(reserv);
   }

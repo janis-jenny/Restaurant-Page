@@ -1,4 +1,4 @@
-import imageArray from './images';
+import { imageArray } from './images';
 import Home from './home';
 import Menu from './menu';
 import Contact from './contact';
@@ -7,6 +7,7 @@ import maido from '../images/logo-maido.png';
 export default class Navbar {
   constructor(container, main) {
     this.navbar = document.createElement('nav');
+    this.navbar.classList.add('flex');
     this.idxTab = 0;
     this.container = container;
     this.main = main;
@@ -25,7 +26,7 @@ export default class Navbar {
 
   nav() {
     const navLink = document.createElement('ul');
-    navLink.classList.add('links-list');
+    navLink.classList.add('links-list', 'flex');
     const homeLink = document.createElement('li');
     homeLink.innerText = 'Home';
     homeLink.classList.add('navi');

@@ -12,7 +12,7 @@ export default class Home {
     image.classList.add('back-img');
     const element = document.createElement('h1');
     element.innerText = 'MAIDO';
-    element.classList.add('title');
+    element.classList.add('title', 'flex');
     const description = document.createElement('p');
     description.innerText = 'THE BEST RESTAURANT IN PERU';
     description.classList.add('paragraph');

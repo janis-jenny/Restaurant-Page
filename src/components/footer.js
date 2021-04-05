@@ -1,4 +1,4 @@
-import imageArray from './images';
+import { imageArray } from './images';
 import face from '../images/facebook.png';
 import insta from '../images/instagram.png';
 import maido from '../images/logo-maido.png';
@@ -7,6 +7,7 @@ import '../css/style.css';
 export default class Footer {
   constructor(container) {
     this.section = document.createElement('footer');
+    this.section.classList.add('flex');
     this.container = container;
     this.icons = [face, insta];
     this.logo = [maido];
