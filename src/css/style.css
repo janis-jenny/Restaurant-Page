@@ -77,7 +77,6 @@ nav {
 .card {
   flex-direction: column;
   margin-bottom: 1rem;
-  
 }
 
 .card-name {
@@ -172,7 +171,7 @@ footer {
 .icons-title {
   font-size: 16px;
   margin: 10px 15px;
-  color:rgb(92, 91, 91);
+  color: rgb(92, 91, 91);
 }
 
 .logo-footer > img {
