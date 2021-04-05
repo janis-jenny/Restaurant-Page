@@ -8,7 +8,7 @@ export default class Contact {
 
   title() {
     const title = document.createElement('h1');
-    title.classList.add('title-contact');
+    title.classList.add('title-contact', 'flex');
     title.innerText = 'CONTACT';
     this.section.append(title);
   }
