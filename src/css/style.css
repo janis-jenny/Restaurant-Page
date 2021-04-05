@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+nav {
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo > img {
+  width: 120px;
+  margin: 10px;
+}
+
+.links-list {
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  color: gray;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navi {
+  margin: 5px 30px;
+  background-color: whitesmoke;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: rgb(92, 91, 91);
+  color: whitesmoke;
+}
+
+.back-img {
+  background-image: url("../images/Maido.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.title {
+  position: absolute;
+  top: 8rem;
+  background-color: whitesmoke;
+  color: gray;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 0.8rem;
+  margin-left: 40%;
+  font-size: 50px;
+  width: 20%;
+}
+
+.paragraph {
+  position: absolute;
+  bottom: 5rem;
+  background-color: whitesmoke;
+  color: gray;
+  padding: 0.5rem 0.7rem;
+  margin-left: 37%;
+  font-size: 20px;
+}
+
+.card {
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.card-name {
+  margin: 0 6.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(92, 91, 91);
+}
+
+.card-img {
+  justify-content: center;
+  align-items: center;
+}
+
+.name-dish {
+  margin: 0;
+  padding: 0 2rem;
+}
+
+.card-title,
+.title-menu {
+  justify-content: center;
+  align-items: center;
+  color: rgb(92, 91, 91);
+  margin: 2rem;
+}
+
+.title-menu {
+  font-size: 20px;
+  width: 100%;
+  margin: 0;
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+
+.card-img img {
+  margin: 25px;
+  width: 240px;
+  height: 200px;
+}
+
+.title-contact {
+  font-size: 20px;
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+
+.info,
+.reservations {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.address,
+.phone {
+  margin: 0.3rem;
+  padding: 0.5rem 0.3rem 0.3rem 0.3rem;
+  border-top: rgb(230, 65, 36) 1.6px solid;
+}
+
+.phone {
+  padding-top: 0.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: rgb(230, 65, 36) 1.6px solid;
+}
+
+.title-reserv {
+  margin: 2.1rem 2rem;
+}
+
+.days {
+  margin: 20px;
+}
+
+footer {
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+.icons {
+  margin: 0;
+}
+
+.icons-card img {
+  margin: 2px 15px;
+  width: 30px;
+  height: 30px;
+  filter: invert(50%);
+}
+
+.icons-title {
+  font-size: 16px;
+  margin: 10px 15px;
+  color: rgb(92, 91, 91);
+}
+
+.logo-footer > img {
+  margin: 0 15px;
+  width: 70px;
+  height: 70px;
+}
