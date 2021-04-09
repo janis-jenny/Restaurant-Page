@@ -1,6 +1,7 @@
 export const imageArray = (container, imgArray) => {
   imgArray.forEach((img) => {
     const imgTag = document.createElement('img');
+    imgTag.classList.add('img-dish');
     imgTag.src = img;
     container.appendChild(imgTag);
   });
